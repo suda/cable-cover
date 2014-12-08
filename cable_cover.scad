@@ -1,7 +1,12 @@
+// Length of the cover. Adjust according to your bed length
 length = 20;
+// Space in the bottom. Adjust according to your widest cable
 gap = 10;
+// Radius of the arch. Higher the radius, flatter the cover. But beware overhang!
 radius = 40;
+// Set depending on amount of cables you want put inside
 height = 10;
+
 inner_radius = radius - 2;
 
 module shell() {
