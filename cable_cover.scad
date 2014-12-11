@@ -1,5 +1,5 @@
 // Length of the cover. Adjust according to your bed length
-length = 20;
+length = 80;
 // Space in the bottom. Adjust according to your widest cable
 gap = 10;
 // Radius of the arch. Higher the radius, flatter the cover. But beware overhang!
@@ -30,6 +30,7 @@ module clip_shell() {
 module bottom() {
 	hypo = sqrt(height * (radius * 2));
 	adj = sqrt((hypo * hypo) - (height * height));
+	echo("Bottom width ", adj * 2);
 	
 	difference() {
 		translate([-radius + height, 0, 0])
